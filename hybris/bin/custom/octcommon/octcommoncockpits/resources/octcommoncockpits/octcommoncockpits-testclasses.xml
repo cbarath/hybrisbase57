@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testclasses><octcommoncockpits><testclass>com.octanner.common.cockpits.cmscockpit.CmsCockpitConfigurationTest</testclass><testclass>com.octanner.common.cockpits.jalo.YAcceleratorcockpitsTest</testclass><testclass>com.octanner.common.cockpits.cmscockpit.sitewizard.CMSSiteUtilsTest</testclass></octcommoncockpits></testclasses>

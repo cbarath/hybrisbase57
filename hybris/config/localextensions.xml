@@ -1,0 +1,168 @@
+<hybrisconfig xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../bin/platform/resources/schemas/extensions.xsd'>
+  <extensions>
+    <path dir='${HYBRIS_BIN_DIR}' />
+	
+	<!-- SAP specific extensions -->
+		
+		<path autoload="true" dir="${HYBRIS_BIN_DIR}/ext-integration/sap/core/" depth="1" /> <!-- core extensions -->
+		<path autoload="true" dir="${HYBRIS_BIN_DIR}/ext-integration/sap/testsupport/" depth="1" /> <!-- test support -->
+		<path autoload="true" dir="${HYBRIS_BIN_DIR}/ext-integration/sap/masterdata/" /> <!-- master data replication -->
+		
+	<!-- <path autoload="true" dir="${HYBRIS_BIN_DIR}/ext-integration/sap/synchronouspricing/" depth="1" /> -->
+	<!-- <path autoload="true" dir="${HYBRIS_BIN_DIR}/ext-integration/sap/synchronousOM/" depth="1" /> -->
+		
+		<path autoload="true" dir="${HYBRIS_BIN_DIR}/ext-integration/sap/asynchronousOM/" depth="1" /> <!-- SAP Asynchronous Order Management -->
+		<path autoload="false" dir="${HYBRIS_BIN_DIR}/ext-integration/sap/productconfig/" />
+			
+	<!-- <path autoload="true" dir="${HYBRIS_BIN_DIR}/ext-integration/sap/adtreco/" depth="1" /> -->
+	<!-- <path autoload="true" dir="${HYBRIS_BIN_DIR}/ext-integration/sap/pointofsale/" depth="1" /> -->
+		
+		<path autoload="true" dir="${HYBRIS_BIN_DIR}/ext-integration/sap/testsupport/" depth="1" /> <!-- SAP point-of-sale -->
+		<path dir='${HYBRIS_BIN_DIR}/ext-integration/datahubbackoffice' autoload='true' />
+		
+		<path dir= '${HYBRIS_BIN_DIR}/ext-integration/sap' autoload='false' />    <!-- To generate ysapproductconfigb2baddon -->
+		
+		
+		<extension name="sapproductconfigb2b" />
+		<extension name="sapproductconfigfacades" />
+		<extension name="sapproductconfighmc" />
+		<extension name="sapproductconfigruntimeinterface" />
+		<extension name="sapproductconfigruntimessc" />
+		<extension name="sapproductconfigservices" />
+		
+	<!-- END SAP specific extensions -->	
+		
+		
+	<!-- OCTANNER COMMON CORE -->
+		<extension name='octcommoncore' />
+		<extension name='octcommoninitialdata' />
+		<extension name='octcommonfacades' />
+		<extension name='octcommoncockpits' />
+		<extension name='octcommontest' />
+		<extension name='octcommonfulfilmentprocess' />
+	<!-- <extension name='octcommonstorefront' /> -->  <!-- Used as a template to generate other storefronts, DO NOT DELETE THE FOLDER -->
+	
+	<!-- MOMENTS STOREFRONT -->
+		<extension name='octmomentsstorefront' />
+	  
+	<!-- PERFORMANCE STOREFRONT -->
+		<extension name='octperformancestorefront' /> 
+	
+		<extension name='powertoolsstore' />
+	
+	<!-- ADD-ONS -->
+	<!-- <extension name='liveeditaddon' />
+		<extension name='acceleratorwebservicesaddon' />
+		<extension name='b2bacceleratoraddon' />
+		<extension name='commerceorgaddon' /> -->
+	<extension name="octsapproductconfigb2baddon" />  <!-- for moments storefront -->
+	
+	
+	<!-- ext-platform -->
+		<extension name='mcc' />
+		<extension name='backoffice' />
+		<extension name='commercesearchbackoffice' />
+		<extension name='b2bcommercebackoffice' />
+		<extension name='mediaconversionbackoffice' />
+		<extension name='commerceservicesbackoffice' />
+		<extension name='solrfacetsearchbackoffice' />
+		<extension name='b2badmincockpit' />
+		<extension name="cockpit" />
+		<extension name="hmc" />
+		<extension name="mcc" />
+		<extension name="platformhmc" />
+		<extension name="sapproductconfigbackoffice" /> 
+		
+		 
+		
+		
+   <!-- <extension name='yacceleratorcockpits' />
+		<extension name='yacceleratorinitialdata' />
+		<extension name='yacceleratorfulfilmentprocess' />
+		<extension name='yacceleratorstorefront' /> -->
+		
+		 
+	<!-- ext-commerce -->
+		<!--
+		removed as not used right now 
+		<extension name="btg" />
+		<extension name="btgcockpit" />
+		-->
+		<extension name="commercesearch" />
+		<extension name="commercesearchbackoffice" />
+		<extension name="commercesearchhmc" />
+		<extension name="commerceservices" />
+		<extension name="basecommerce" />
+		<extension name="payment" />
+		
+		<!-- removed as not used right now 
+		<extension name="promotions" />
+		<extension name="voucher" /> -->
+		
+		<extension name="customerreview" />
+		<extension name="ticketsystem" />
+		<extension name="solrfacetsearch" />
+		<extension name="solrfacetsearchhmc" />
+		<extension name="b2bcommerce" />
+		<extension name="b2bapprovalprocess" />
+		<extension name="b2badmincockpit" />
+		<extension name="oci" />
+		<extension name="wishlist" />
+		<extension name="commercefacades" />
+		
+	<!-- ext-data -->
+		<extension name="commercesearchsampledata" />
+		<!-- <extension name="apparelstore" /> -->
+		<!-- <extension name="electronicsstore" /> -->
+		<!-- <extension name="b2bacceleratorsampledata" /> -->
+		<!-- <extension name="instoresampledata" /> -->
+		
+	<!-- ext-content -->
+		<extension name="productcockpit" />
+		<extension name="cms2" />
+		<extension name="cms2lib" />
+		<extension name="cmscockpit" />
+		<extension name="bmecat" />
+		<extension name="bmecathmc" />
+		<extension name="importcockpit" />
+		<extension name="classificationsystems" />
+		<extension name="classificationsystemshmc" />
+		
+	<!-- ext-channel -->
+		<extension name="cscockpit" />
+		<extension name="mobileoptionals" />
+		<extension name="mobileservices" />
+		<!-- <extension name="instore" /> -->
+
+		
+		
+	<!-- ext-template -->
+		<extension name="ycommercewebservices" />
+		<extension name="ycommercewebserviceshmc" />
+		<extension name="yaddon" />
+		
+	<!-- ext-accelerator -->
+		<extension name="acceleratorservices" />
+		<extension name="acceleratorfacades" />
+		<extension name="acceleratorcms" />
+		<extension name="acceleratorstorefrontcommons" />
+		<extension name="b2bacceleratorfacades" />
+		<extension name="b2bacceleratorservices" />
+		<extension name="platformwebservices" />
+		<extension name="datahubadapter" />
+		
+		
+	<!-- Solr Server -->
+		<extension name='solrserver' />
+		
+		
+	<!-- ext-addon -->
+		<extension name="addonsupport" />
+		
+	
+	  
+   <!-- ext-ImageMagick -->
+		<extension name="mediaconversion" />
+		
+  </extensions>
+</hybrisconfig>

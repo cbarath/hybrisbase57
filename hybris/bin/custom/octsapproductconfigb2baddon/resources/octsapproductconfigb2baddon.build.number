@@ -1,0 +1,11 @@
+#Ant properties
+#Mon Sep 14 15:55:36 CEST 2015
+builddate=20150914 1555
+description=octsapproductconfigb2baddon
+group.id=de.hybris.platform
+module.name=platform-module
+name=octsapproductconfigb2baddon
+releasedate=20150827 1244
+vendor=hybris
+version=5.7.0.0-SNAPSHOT
+version.api=5.7.0
